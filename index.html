@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header_home">
+        <div class="container d-flex align-center justify-between">
+            <a href="./index.html" class="logo">
+                <img src="assets/img/svg/logo-dark.svg" alt="">
+                <img src="assets/img/svg/logo.svg" alt="">
+            </a>
+            <ul class="header-nav d-flex">
+                <li><a href="./catalog.html">Каталог</a></li>
+                <li><a href="./production.html">Производство</a></li>
+                <li><a href="./documents.html">Документы</a></li>
+                <li><a href="./dealer.html">Диллеры</a></li>
+                <li><a href="./news.html">Новости</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+            <div class="d-flex align-center">
+                <div class="search-btn">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_113_2993)">
+                        <path d="M19.8107 19.4119L14.647 14.3308C15.9992 12.8616 16.8301 10.9187 16.8301 8.78068C16.8294 4.2071 13.0623 0.5 8.41496 0.5C3.76762 0.5 0.000488281 4.2071 0.000488281 8.78068C0.000488281 13.3543 3.76762 17.0614 8.41496 17.0614C10.4229 17.0614 12.2646 16.3668 13.7112 15.2122L18.8949 20.3134C19.1475 20.5622 19.5576 20.5622 19.8101 20.3134C19.8702 20.2547 19.918 20.1846 19.9506 20.1072C19.9832 20.0299 20 19.9467 20.0001 19.8628C20.0001 19.7788 19.9834 19.6957 19.9509 19.6182C19.9184 19.5408 19.8707 19.4707 19.8107 19.4119ZM8.41496 15.7873C4.4828 15.7873 1.29517 12.6504 1.29517 8.78068C1.29517 4.91101 4.4828 1.77403 8.41496 1.77403C12.3471 1.77403 15.5347 4.91101 15.5347 8.78068C15.5347 12.6504 12.3471 15.7873 8.41496 15.7873Z" fill="#1A2030"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_113_2993">
+                        <rect width="20" height="20" fill="#1A2030" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="lang-link">
+                    <div class="lang-active">
+                        <span>RU</span>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_113_3000)">
+                            <path d="M5.31717 7.8009L9.87747 2.79675C10.0408 2.63254 10.0408 2.36623 9.87747 2.20202C9.7141 2.0378 9.44903 2.0378 9.28565 2.20202L4.99999 6.90443L0.714353 2.20243C0.550976 2.03822 0.285898 2.03822 0.122534 2.20243C-0.0408306 2.36664 -0.0408306 2.63296 0.122534 2.79715L4.68284 7.80131C4.76993 7.88884 4.88539 7.92636 4.99958 7.92051C5.11419 7.92596 5.22964 7.88844 5.31717 7.8009Z" fill="#1A2030"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_113_3000">
+                            <rect width="10" height="10" fill="#1A2030" transform="translate(10) rotate(90)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <ul class="lang-list">
+                        <li class="active"><a href="#">RU</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+                <div class="dealer-btn">
+                    <span>Стать диллером</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_113_3007)">
+                        <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_113_3007">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="menu-btn">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.25 6.5H0.75C0.551088 6.5 0.360322 6.42098 0.21967 6.28033C0.0790176 6.13968 0 5.94891 0 5.75C0 5.55109 0.0790176 5.36032 0.21967 5.21967C0.360322 5.07902 0.551088 5 0.75 5H23.25C23.4489 5 23.6397 5.07902 23.7803 5.21967C23.921 5.36032 24 5.55109 24 5.75C24 5.94891 23.921 6.13968 23.7803 6.28033C23.6397 6.42098 23.4489 6.5 23.25 6.5ZM23.25 14H0.75C0.551088 14 0.360322 13.921 0.21967 13.7803C0.0790176 13.6397 0 13.4489 0 13.25C0 13.0511 0.0790176 12.8603 0.21967 12.7197C0.360322 12.579 0.551088 12.5 0.75 12.5H23.25C23.4489 12.5 23.6397 12.579 23.7803 12.7197C23.921 12.8603 24 13.0511 24 13.25C24 13.4489 23.921 13.6397 23.7803 13.7803C23.6397 13.921 23.4489 14 23.25 14ZM23.25 21.5H0.75C0.551088 21.5 0.360322 21.421 0.21967 21.2803C0.0790176 21.1397 0 20.9489 0 20.75C0 20.5511 0.0790176 20.3603 0.21967 20.2197C0.360322 20.079 0.551088 20 0.75 20H23.25C23.4489 20 23.6397 20.079 23.7803 20.2197C23.921 20.3603 24 20.5511 24 20.75C24 20.9489 23.921 21.1397 23.7803 21.2803C23.6397 21.421 23.4489 21.5 23.25 21.5Z" fill="black"/>
+                    </svg>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_113_3721)">
+                        <path d="M19.7581 20.6152C19.6454 20.6153 19.5339 20.593 19.4299 20.5499C19.3258 20.5067 19.2314 20.4434 19.1519 20.3636L3.63418 4.8479C3.47323 4.68695 3.38281 4.46865 3.38281 4.24104C3.38281 4.01342 3.47323 3.79513 3.63418 3.63418C3.79513 3.47323 4.01342 3.38281 4.24104 3.38281C4.46865 3.38281 4.68695 3.47323 4.8479 3.63418L20.3656 19.1519C20.4852 19.2719 20.5665 19.4246 20.5994 19.5908C20.6323 19.757 20.6153 19.9292 20.5505 20.0857C20.4856 20.2422 20.3759 20.376 20.2351 20.4702C20.0944 20.5645 19.9288 20.6149 19.7594 20.6152H19.7581Z" fill="#1A2030"/>
+                        <path d="M4.2415 20.6152C4.07197 20.6152 3.90626 20.5649 3.76528 20.4708C3.62429 20.3767 3.51436 20.2429 3.44936 20.0863C3.38436 19.9298 3.3672 19.7574 3.40005 19.5911C3.43291 19.4248 3.5143 19.272 3.63395 19.1519L19.1517 3.63418C19.3126 3.47323 19.5309 3.38281 19.7585 3.38281C19.9861 3.38281 20.2044 3.47323 20.3654 3.63418C20.5263 3.79513 20.6168 4.01342 20.6168 4.24104C20.6168 4.46865 20.5263 4.68695 20.3654 4.8479L4.84767 20.3656C4.76801 20.445 4.67347 20.508 4.56945 20.5508C4.46543 20.5936 4.35399 20.6155 4.2415 20.6152Z" fill="#1A2030"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_113_3721">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu d-none">
+            <div class="menu-content">
+                <div class="menu-top">
+                    <div class="search-btn">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_113_2993)">
+                            <path d="M19.8107 19.4119L14.647 14.3308C15.9992 12.8616 16.8301 10.9187 16.8301 8.78068C16.8294 4.2071 13.0623 0.5 8.41496 0.5C3.76762 0.5 0.000488281 4.2071 0.000488281 8.78068C0.000488281 13.3543 3.76762 17.0614 8.41496 17.0614C10.4229 17.0614 12.2646 16.3668 13.7112 15.2122L18.8949 20.3134C19.1475 20.5622 19.5576 20.5622 19.8101 20.3134C19.8702 20.2547 19.918 20.1846 19.9506 20.1072C19.9832 20.0299 20 19.9467 20.0001 19.8628C20.0001 19.7788 19.9834 19.6957 19.9509 19.6182C19.9184 19.5408 19.8707 19.4707 19.8107 19.4119ZM8.41496 15.7873C4.4828 15.7873 1.29517 12.6504 1.29517 8.78068C1.29517 4.91101 4.4828 1.77403 8.41496 1.77403C12.3471 1.77403 15.5347 4.91101 15.5347 8.78068C15.5347 12.6504 12.3471 15.7873 8.41496 15.7873Z" fill="#1A2030"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_113_2993">
+                            <rect width="20" height="20" fill="#1A2030" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="lang-link">
+                        <div class="lang-active">
+                            <span>RU</span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3000)">
+                                <path d="M5.31717 7.8009L9.87747 2.79675C10.0408 2.63254 10.0408 2.36623 9.87747 2.20202C9.7141 2.0378 9.44903 2.0378 9.28565 2.20202L4.99999 6.90443L0.714353 2.20243C0.550976 2.03822 0.285898 2.03822 0.122534 2.20243C-0.0408306 2.36664 -0.0408306 2.63296 0.122534 2.79715L4.68284 7.80131C4.76993 7.88884 4.88539 7.92636 4.99958 7.92051C5.11419 7.92596 5.22964 7.88844 5.31717 7.8009Z" fill="#1A2030"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3000">
+                                <rect width="10" height="10" fill="#1A2030" transform="translate(10) rotate(90)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <ul class="lang-list">
+                            <li class="active"><a href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="menu-nav">
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="./production.html">Производство</a></li>
+                    <li><a href="./documents.html">Документы</a></li>
+                    <li><a href="./dealer.html">Диллеры</a></li>
+                    <li><a href="./news.html">Новости</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                </ul>
+                <div class="dealer-btn"><span>Стать диллером</span></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="block1 d-flex align-end">
+            <div class="block1-box">
+                <div class="container d-flex align-end justify-between">
+                    <div class="">
+                        <h1 class="block1-title">Качество, <br> проверенное временем</h1>
+                        <p class="block1-subtitle">Полный спектр строительных материалов для долговечного результата</p>
+                    </div>
+                    <a href="#" class="more-link btn">
+                        <span>Узнать подробнее</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_113_3007)">
+                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_113_3007">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="block2">
+            <div class="container">
+                <div class="block2-top d-flex align-center justify-between">
+                    <h2 class="title-text">Promix, это</h2>
+                    <a href="#" class="view-all">Смотреть все</a>
+                </div>
+                <div class="block2-box">
+                    <div class="block2-item">
+                        <a href="#"  class="arrow">
+                            <svg width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3820)">
+                                <path d="M3.42865 2.09125L3.42865 2.96396L6.91948 2.96395L1.87024 8.01319L2.49361 8.63655L7.54284 3.58732L7.54284 7.07815H8.41555L8.41555 2.09125L3.42865 2.09125Z" fill="#404B67"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3820">
+                                <rect width="9.81982" height="9.81982" fill="white" transform="translate(0.179688 0.0900879)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <img src="assets/img/png/p1.png" alt="" class="product-img">
+                        <p class="product-name">Грунт</p>
+                    </div>
+                    <div class="block2-item">
+                        <a href="#"  class="arrow">
+                            <svg width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3820)">
+                                <path d="M3.42865 2.09125L3.42865 2.96396L6.91948 2.96395L1.87024 8.01319L2.49361 8.63655L7.54284 3.58732L7.54284 7.07815H8.41555L8.41555 2.09125L3.42865 2.09125Z" fill="#404B67"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3820">
+                                <rect width="9.81982" height="9.81982" fill="white" transform="translate(0.179688 0.0900879)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <img src="assets/img/png/p2.png" alt="" class="product-img">
+                        <p class="product-name">Шпатлевки</p>
+                    </div>
+                    <div class="block2-item">
+                        <a href="#"  class="arrow">
+                            <svg width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3820)">
+                                <path d="M3.42865 2.09125L3.42865 2.96396L6.91948 2.96395L1.87024 8.01319L2.49361 8.63655L7.54284 3.58732L7.54284 7.07815H8.41555L8.41555 2.09125L3.42865 2.09125Z" fill="#404B67"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3820">
+                                <rect width="9.81982" height="9.81982" fill="white" transform="translate(0.179688 0.0900879)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <img src="assets/img/png/p3.png" alt="" class="product-img">
+                        <p class="product-name">Шпатлевки</p>
+                    </div>
+                    <div class="block2-item">
+                        <a href="#"  class="arrow">
+                            <svg width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3820)">
+                                <path d="M3.42865 2.09125L3.42865 2.96396L6.91948 2.96395L1.87024 8.01319L2.49361 8.63655L7.54284 3.58732L7.54284 7.07815H8.41555L8.41555 2.09125L3.42865 2.09125Z" fill="#404B67"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3820">
+                                <rect width="9.81982" height="9.81982" fill="white" transform="translate(0.179688 0.0900879)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <img src="assets/img/png/p4.png" alt="" class="product-img">
+                        <p class="product-name">Клеи</p>
+                    </div>
+                    <div class="block2-item">
+                        <a href="#"  class="arrow">
+                            <svg width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3820)">
+                                <path d="M3.42865 2.09125L3.42865 2.96396L6.91948 2.96395L1.87024 8.01319L2.49361 8.63655L7.54284 3.58732L7.54284 7.07815H8.41555L8.41555 2.09125L3.42865 2.09125Z" fill="#404B67"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3820">
+                                <rect width="9.81982" height="9.81982" fill="white" transform="translate(0.179688 0.0900879)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <img src="assets/img/png/p5.png" alt="" class="product-img">
+                        <p class="product-name">Декоративные составы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block3">
+            <div class="container d-flex justify-between align-center">
+                <h2 class="title-text">наши продукты <br> сертифицированны</h2>
+                <a href="#" class="btn">
+                    <span>Ознакомиться</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_113_3007)">
+                        <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_113_3007">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <img src="assets/img/png/lines.png" alt="" class="lines">
+            </div>
+        </div>
+
+        <div class="block4">
+            <div class="container d-flex justify-between align-center">
+                <div class="block4-info">
+                    <h2 class="title-text">ПЕРСОНАЛЬНЫЕ РЕШЕНИЯ</h2>
+                    <div class="">
+                        <p class="info-text">Предлагаем  современные технологии и инновационные решения</p>
+                        <p class="info-text">Мы выпускаем профессиональные полимерные шпаклевки, краски, клеи, декоративные составы для отделки в сухих и влажных помещениях.</p>
+                    </div>
+                    <div class="btns d-flex justify-between align-center flex-wrap">
+                        <a href="#" class="btn">
+                            <span>Ознакомиться</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3007)">
+                                <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3007">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="info-link">Подробнее о компании</a>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="assets/img/png/p6.png" alt="" class="product-img">
+                    <img src="assets/img/png/circles.png" alt="" class="circles">
+                </div>
+            </div>
+        </div>
+
+        <div class="block5">
+            <div class="container">
+                <div class="block5-top d-flex align-center justify-between">
+                    <h2 class="title-text">Популярные товары</h2>
+                    <a href="#" class="view-all">Смотреть все</a>
+                </div>
+                <div class="block5-box">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/img/png/p7.png" alt="">
+                        </div>
+                        <div class="info d-flex flex-column justify-between">
+                            <div class="">
+                                <div class="status">Категория: <span>грунт</span></div>
+                                <p class="product-name">Грунт-краска Promix</p>
+                                <p class="product-text">Пигментированный грунт – отличное решения для подготовки любых минеральных, пористых, деревянных оснований, а так же для консервации</p>
+                            </div>
+                            <a href="./product-card.html" class="product-link">
+                                <span>Подробнее</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_113_3007)">
+                                    <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_113_3007">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/img/png/p8.png" alt="">
+                        </div>
+                        <div class="info d-flex flex-column justify-between">
+                            <div class="">
+                                <div class="status">Категория: <span>грунт</span></div>
+                                <p class="product-name">Грунт концентрат PROMIX Mittelgrunt</p>
+                                <p class="product-text">Грунтовка PROMIX-Миттель грунт, концентрат, предназначена для обработки поверхностей: газо- пенобетона; керамического и силикатного кирпича;</p>
+                            </div>
+                            <a href="./product-card.html" class="product-link">
+                                <span>Подробнее</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_113_3007)">
+                                    <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_113_3007">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/img/png/p3.png" alt="">
+                        </div>
+                        <div class="info d-flex flex-column justify-between">
+                            <div class="">
+                                <div class="status">Категория: <span>краска</span></div>
+                                <p class="product-name">Краска Super Tack 3 Promix</p>
+                                <p class="product-text">Глубокоматовая латексная краска предназначена для высококачественной окраски стен и потолков внутри помещений. Рекомендуется для окраски помещений с повышенной влажностью. Обладает экономичным расходом благодаря высокой укрывистости.</p>
+                            </div>
+                            <a href="./product-card.html" class="product-link">
+                                <span>Подробнее</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_113_3007)">
+                                    <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_113_3007">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/img/png/p3.png" alt="">
+                        </div>
+                        <div class="info d-flex flex-column justify-between">
+                            <div class="">
+                                <div class="status">Категория: <span> декоративный состав</span></div>
+                                <p class="product-name">Полимерный <br> декоративный состав </p>
+                                <p class="product-text">Декоративный состав на водной основе акриловых сополимеров готовый к применению, для механизированного нанесения. Состав позволяет получить на поверхности декоративные элементы типа "мелкая шуба", "рогожка", "капелька",</p>
+                            </div>
+                            <a href="./product-card.html" class="product-link">
+                                <span>Подробнее</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_113_3007)">
+                                    <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_113_3007">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block6">
+            <div class="container">
+                <div class="block6-info">
+                    <div class="info">
+                        <img src="assets/img/svg/e1.svg" alt="" class="info-icon">
+                        <p class="info-text">Широкий ассортимент продукции</p>
+                    </div>
+                    <div class="info">
+                        <img src="assets/img/svg/e2.svg" alt="" class="info-icon">
+                        <p class="info-text">Инновационные технологии производства</p>
+                    </div>
+                    <div class="info">
+                        <img src="assets/img/svg/e3.svg" alt="" class="info-icon">
+                        <p class="info-text">Доверие <br>
+                            профессионалов</p>
+                    </div>
+                    <div class="info">
+                        <img src="assets/img/svg/e4.svg" alt="" class="info-icon">
+                        <p class="info-text">Экологичность <br>
+                            и безопасность</p>
+                    </div>
+                </div>
+                <div class="block6-box">
+                    <a href="#" class="d-flex justify-between align-start">
+                        <h2 class="title-text">познакомьтесь <br> с нашим производством</h2>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_113_3007)">
+                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_113_3007">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div class="video">
+                        <video src="assets/video/video.mp4" controls="controls"></video>
+                        <img src="assets/img/png/video-img.png" alt="" class="poster">
+                        <div class="play-btn">
+                            <img src="assets/img/svg/play.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block7">
+            <div class="container">
+                <div class="block5-top d-flex align-center justify-between">
+                    <h2 class="title-text">Блог</h2>
+                    <a href="#" class="view-all">Смотреть все</a>
+                </div>
+                <div class="block7-box">
+                    <div class="block7-item">
+                        <a href="./news-in.html"></a>
+                        <img src="assets/img/png/b1.png" alt="" class="item-img">
+                        <div class="info d-flex flex-column justify-between">
+                            <div class="">
+                                <p class="item-name">Новый продукт: универсальная грунтовка с усиленной адгезией!</p>
+                                <p class="item-text">Расскажите о запуске новой универсальной грунтовки, которая обеспечивает отличное сцепление с различными поверхностями. Поделитесь ее преимуществами, примерами использования и отзывами первых покупателей.</p>
+                            </div>
+                            <div class="item-data">06.02.2024</div>
+                        </div>
+                    </div>
+                    <div class="block7-item">
+                        <a href="./news-in.html"></a>
+                        <img src="assets/img/png/b2.png" alt="" class="item-img">
+                        <div class="info d-flex flex-column justify-between">
+                            <div class="">
+                                <p class="item-name">Как правильно выбрать шпаклевку для вашего проекта</p>
+                                <p class="item-text">Подготовьте полезный материал для клиентов, который объясняет, как выбрать подходящую шпаклевку из ассортимента компании в зависимости от задач: стартовая, финишная, для влажных помещений и т. д.</p>
+                            </div>
+                            <div class="item-data">18.12.2024</div>
+                        </div>
+                    </div>
+                    <div class="block7-item">
+                        <a href="./news-in.html"></a>
+                        <img src="assets/img/png/b3.png" alt="" class="item-img">
+                        <div class="info d-flex flex-column justify-between">
+                            <div class="">
+                                <p class="item-name">Наши шаги к устойчивому будущему</p>
+                                <p class="item-text">Расскажите о применяемых экологичных технологиях, переработке материалов, а также участии компании в инициативе по снижению углеродного следа. Подчеркните важность ответственного подхода к производству.</p>
+                            </div>
+                            <div class="item-data">12.07.2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block8">
+            <div class="container">
+                <h2 class="title-text">Свяжитесь с нашим <br> специалистом</h2>
+                <form class="block8-form">
+                    <div class="input-box">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" class="form-inp" placeholder="Например: Иван">
+                        <small></small>
+                        <div class="test">
+                            <img src="assets/img/svg/succes.svg" alt="">
+                            <img src="assets/img/svg/error.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Введите номер телефона</label>
+                        <input type="text" id="phone" class="form-inp" placeholder="+7">
+                        <small></small>
+                        <div class="test">
+                            <img src="assets/img/svg/succes.svg" alt="">
+                            <img src="assets/img/svg/error.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="btns d-flex align-center justify-between">
+                        <div class="check-box d-flex align-center">
+                            <input type="checkbox" id="check">
+                            <label for="check">Нажимая кнопку «Обратный звонок» вы соглашаетесь с условиями политики конфиденциальности</label>
+                        </div>
+                        <button class="form-btn btn" type="button">
+                            <span>Обратный звонок</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_113_3007)">
+                                <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_113_3007">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-nav">
+            <div class="container d-flex justify-between flex-wrap">
+                <div class="nav">
+                    <p class="nav-title">О нас</p>
+                    <ul class="nav-list">
+                        <li><a href="./production.html">Производство</a></li>
+                        <li><a href="./documents.html">Документы</a></li>
+                        <li><a href="./dealer.html">Диллеры</a></li>
+                        <li><a href="./news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <p class="nav-title">Каталог</p>
+                    <ul class="nav-list">
+                        <li><a href="#">Грунт</a></li>
+                        <li><a href="#">Шпатлевки</a></li>
+                        <li><a href="#">Краски</a></li>
+                        <li><a href="#">Клеи</a></li>
+                        <li><a href="#">Декоративные составы</a></li>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <p class="nav-title">Контакты</p>
+                    <ul class="nav-list">
+                        <li><a href="tel:88422229042">8 (8422) 22-90-42</a></li>
+                        <li><a href="tel:89176200528">8 (917) 620-05-28</a></li>
+                        <li><a href="mailto:simkraski@mail.ru">simkraski@mail.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           <div class="container d-flex align-center justify-between">
+            <a href="./index.html" class="logo">
+                <img src="assets/img/svg/logo.svg" alt="">
+            </a>
+            <a href="#" class="link">Политика конфедициальности</a>
+            <div class="d-flex align-center">
+                <p>© ООО «PROMIX», 2024</p>
+                <div class="socials d-flex">
+                    <a href="#">
+                        <img src="assets/img/svg/vk.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/svg/tg.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/svg/wh.svg" alt="">
+                    </a>
+                </div>
+            </div>
+           </div>
+        </div>
+    </footer>
+ 
+
+    <div class="popUp popUp-form d-none">
+        <div class="popUp-content">
+            <div class="popUp-close">
+                <svg width="15" height="15" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_113_3721)">
+                    <path d="M19.7581 20.6152C19.6454 20.6153 19.5339 20.593 19.4299 20.5499C19.3258 20.5067 19.2314 20.4434 19.1519 20.3636L3.63418 4.8479C3.47323 4.68695 3.38281 4.46865 3.38281 4.24104C3.38281 4.01342 3.47323 3.79513 3.63418 3.63418C3.79513 3.47323 4.01342 3.38281 4.24104 3.38281C4.46865 3.38281 4.68695 3.47323 4.8479 3.63418L20.3656 19.1519C20.4852 19.2719 20.5665 19.4246 20.5994 19.5908C20.6323 19.757 20.6153 19.9292 20.5505 20.0857C20.4856 20.2422 20.3759 20.376 20.2351 20.4702C20.0944 20.5645 19.9288 20.6149 19.7594 20.6152H19.7581Z" fill="#6C7F9A"/>
+                    <path d="M4.2415 20.6152C4.07197 20.6152 3.90626 20.5649 3.76528 20.4708C3.62429 20.3767 3.51436 20.2429 3.44936 20.0863C3.38436 19.9298 3.3672 19.7574 3.40005 19.5911C3.43291 19.4248 3.5143 19.272 3.63395 19.1519L19.1517 3.63418C19.3126 3.47323 19.5309 3.38281 19.7585 3.38281C19.9861 3.38281 20.2044 3.47323 20.3654 3.63418C20.5263 3.79513 20.6168 4.01342 20.6168 4.24104C20.6168 4.46865 20.5263 4.68695 20.3654 4.8479L4.84767 20.3656C4.76801 20.445 4.67347 20.508 4.56945 20.5508C4.46543 20.5936 4.35399 20.6155 4.2415 20.6152Z" fill="#6C7F9A"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_113_3721">
+                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+           <h2 class="title-text">Стать диллером</h2>
+           <form class="popUp-form">
+            <div class="input-box">
+                <label for="name">Имя</label>
+                <input type="text" id="user_name" class="form-inp" placeholder="Например: Иван">
+                <small></small>
+                <div class="test">
+                    <img src="assets/img/svg/succes.svg" alt="">
+                    <img src="assets/img/svg/error.svg" alt="">
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="phone">Введите номер телефона</label>
+                <input type="text" id="user_phone" class="form-inp" placeholder="+7">
+                <small></small>
+                <div class="test">
+                    <img src="assets/img/svg/succes.svg" alt="">
+                    <img src="assets/img/svg/error.svg" alt="">
+                </div>
+            </div>
+            <div class="check-box d-flex align-center">
+                <input type="checkbox" id="check">
+                <label for="check">Нажимая кнопку «Обратный звонок» вы соглашаетесь с условиями <a href="#">политики конфиденциальности</a></label>
+            </div>
+            <button class="form-btn btn" type="button">
+                <span>Обратный звонок</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_113_3007)">
+                    <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_113_3007">
+                    <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+           </form>
+        </div>
+
+        <div class="popUp-content thanks d-none">
+            <div class="popUp-close">
+                <img src="" alt="">
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="popUp popUp-search d-none">
+        <div class="popUp-content">
+            <div class="popUp-close">
+                <svg width="15" height="15" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_113_3721)">
+                    <path d="M19.7581 20.6152C19.6454 20.6153 19.5339 20.593 19.4299 20.5499C19.3258 20.5067 19.2314 20.4434 19.1519 20.3636L3.63418 4.8479C3.47323 4.68695 3.38281 4.46865 3.38281 4.24104C3.38281 4.01342 3.47323 3.79513 3.63418 3.63418C3.79513 3.47323 4.01342 3.38281 4.24104 3.38281C4.46865 3.38281 4.68695 3.47323 4.8479 3.63418L20.3656 19.1519C20.4852 19.2719 20.5665 19.4246 20.5994 19.5908C20.6323 19.757 20.6153 19.9292 20.5505 20.0857C20.4856 20.2422 20.3759 20.376 20.2351 20.4702C20.0944 20.5645 19.9288 20.6149 19.7594 20.6152H19.7581Z" fill="#6C7F9A"/>
+                    <path d="M4.2415 20.6152C4.07197 20.6152 3.90626 20.5649 3.76528 20.4708C3.62429 20.3767 3.51436 20.2429 3.44936 20.0863C3.38436 19.9298 3.3672 19.7574 3.40005 19.5911C3.43291 19.4248 3.5143 19.272 3.63395 19.1519L19.1517 3.63418C19.3126 3.47323 19.5309 3.38281 19.7585 3.38281C19.9861 3.38281 20.2044 3.47323 20.3654 3.63418C20.5263 3.79513 20.6168 4.01342 20.6168 4.24104C20.6168 4.46865 20.5263 4.68695 20.3654 4.8479L4.84767 20.3656C4.76801 20.445 4.67347 20.508 4.56945 20.5508C4.46543 20.5936 4.35399 20.6155 4.2415 20.6152Z" fill="#6C7F9A"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_113_3721">
+                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="search">
+                <input type="text" class="search-inp" placeholder="Поиск">
+                <button class="search-btn">Найти</button>
+                <img src="assets/img/svg/search2.svg" alt="" class="search-icon">
+            </div>
+            <p class="result-text">Результаты поиска</p>
+            <div class="result-box">
+                <div class="swiper swiper-result">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p7.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт-краска Promix</p>
+                                        <p class="product-text">Пигментированный грунт – отличное решения для подготовки любых минеральных, пористых, деревянных оснований, а так же для консервации</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p8.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт концентрат PROMIX Mittelgrunt</p>
+                                        <p class="product-text">Грунтовка PROMIX-Миттель грунт, концентрат, предназначена для обработки поверхностей: газо- пенобетона; керамического и силикатного кирпича;</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p7.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт-краска Promix</p>
+                                        <p class="product-text">Пигментированный грунт – отличное решения для подготовки любых минеральных, пористых, деревянных оснований, а так же для консервации</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p8.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт концентрат PROMIX Mittelgrunt</p>
+                                        <p class="product-text">Грунтовка PROMIX-Миттель грунт, концентрат, предназначена для обработки поверхностей: газо- пенобетона; керамического и силикатного кирпича;</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p7.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт-краска Promix</p>
+                                        <p class="product-text">Пигментированный грунт – отличное решения для подготовки любых минеральных, пористых, деревянных оснований, а так же для консервации</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p8.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт концентрат PROMIX Mittelgrunt</p>
+                                        <p class="product-text">Грунтовка PROMIX-Миттель грунт, концентрат, предназначена для обработки поверхностей: газо- пенобетона; керамического и силикатного кирпича;</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p7.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт-краска Promix</p>
+                                        <p class="product-text">Пигментированный грунт – отличное решения для подготовки любых минеральных, пористых, деревянных оснований, а так же для консервации</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="assets/img/png/p8.png" alt="">
+                                </div>
+                                <div class="info d-flex flex-column justify-between">
+                                    <div class="">
+                                        <div class="status">Категория: <span>грунт</span></div>
+                                        <p class="product-name">Грунт концентрат PROMIX Mittelgrunt</p>
+                                        <p class="product-text">Грунтовка PROMIX-Миттель грунт, концентрат, предназначена для обработки поверхностей: газо- пенобетона; керамического и силикатного кирпича;</p>
+                                    </div>
+                                    <a href="./product-card.html" class="product-link">
+                                        <span>Подробнее</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_113_3007)">
+                                            <path d="M6.6176 4.07869L6.6176 5.85613L13.7274 5.85613L3.4436 16.1399L4.7132 17.4095L14.997 7.12573L14.997 14.2355H16.7744V4.07869H6.6176Z" fill="#1A2030"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_113_3007">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar result-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/plugin/jquery.js"></script>
+    <script src="assets/js/plugin/swiper.js"></script>
+    <script src="assets/js/plugin/mask.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/pop-up.js"></script>
+</body>
+</html>

@@ -1797,12 +1797,16 @@ main .block14 .documents .document-item .item-list li a br {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s all;
 }
 .footer .nav:nth-child(1) .nav-list li a::after, .footer .nav:nth-child(2) .nav-list li a::after {
   content: url(../img/svg/link-white.svg);
 }
-.footer .nav:nth-child(1) .nav-list li:hover, .footer .nav:nth-child(2) .nav-list li:hover {
-  opacity: 0.8;
+.footer .nav:nth-child(1) .nav-list li a:hover, .footer .nav:nth-child(2) .nav-list li a:hover {
+  color: #476FD3;
+}
+.footer .nav:nth-child(1) .nav-list li a:hover::after, .footer .nav:nth-child(2) .nav-list li a:hover::after {
+  content: url(../img/svg/link-blue.svg);
 }
 .footer .nav:nth-child(3) {
   width: 24%;

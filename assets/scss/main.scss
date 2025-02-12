@@ -1851,12 +1851,16 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            transition: .3s all;
             &::after {
               content: url(../img/svg/link-white.svg);
             }
-          }
-          &:hover {
-            opacity: 0.8;
+            &:hover {
+              color: #476FD3;
+            }
+            &:hover::after {
+              content: url(../img/svg/link-blue.svg);
+            }
           }
         }
       }

@@ -315,8 +315,8 @@ body {
     .lang-list {
       position: absolute;
       width: 100%;
-      left: 0;
-      top: 100%;
+      left: -3px;
+      top: 80%;
       display: none;
       .active a {
         text-decoration: underline;
@@ -439,9 +439,10 @@ body {
       border-left: 1px solid rgba(26, 32, 48, 0.1);
       color: #1A2030 !important;
       .lang-list {
-        li:first-child {
+        top: 50%;
+        li {
           margin: 0;
-          margin-bottom: 15px;
+          margin-top: 20px;
         }
       }
     }
@@ -513,7 +514,7 @@ body {
     fill: #fff;
   }
   .lang-link svg path {
-    fill: #fff;
+    fill: #1A2030;
   }
 }
 
@@ -799,6 +800,9 @@ main {
   .block2 {
     padding: 75px 0;
     overflow: hidden;
+    .swiper-block2 {
+      margin-top: 34px;
+    }
     &-box {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -1192,6 +1196,7 @@ main {
       font-weight: 500;
       text-transform: uppercase;
       border-bottom: 1px solid rgba(64, 75, 103, 0.15);
+      cursor: pointer;
       &:hover {
         color: #476FD3;
         border-color: #476FD3;
@@ -1950,17 +1955,14 @@ main {
       }
     }
     .thanks {
+      width: 322px;
       background: #fff;
-      padding: 43px 20px 70px;
-      text-align: center;
-      .title-text {
-        line-height: 32px;
-        margin: 20px 0 8px;
-      }
+      padding: 42px 30px;
       .info-text {
-        font-size: 20px;
-        line-height: 32px;
-        color: #536272;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+        margin-top: 30px;
       }
     }
   }

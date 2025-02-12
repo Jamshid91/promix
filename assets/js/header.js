@@ -64,7 +64,9 @@ const userNameSuc =  userName.nextElementSibling.classList,
 
 if(userNameSuc == 'success' && userPhoneSuc == 'success') {
   // formBtn.type = 'submit'
-  location.reload();
+//   location.reload();
+popUp_form.children[0].classList.add('d-none')
+popUp_form.children[1].classList.remove('d-none')
 }
 })
 
@@ -145,11 +147,39 @@ const result = new Swiper('.swiper-result', {
   }
   });
 
+  const block2 = new Swiper('.swiper-block2', {
+    loop: false,
+    breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+          loop: false,
+          centeredSlides: false,
+          grid: {
+              rows: 3,
+              fill: 'row'
+            },
+        },
+        768: {
+          slidesPerView: 3.5,
+          spaceBetween: 14,
+          loop: true,
+          centeredSlides: true,
+        },
+        992: {
+          slidesPerView: 4.2,
+          spaceBetween: 14,
+          loop: true,
+          centeredSlides: true,
+        },
+  }
+  });
+
 
   // Свяжитесь с нашим специалистом
 const user_name = document.getElementById('name'),
-user_phone = document.getElementById('phone'),
-form_btn = document.querySelector('.block8-form .form-btn');
+    user_phone = document.getElementById('phone'),
+    form_btn = document.querySelector('.block8-form .form-btn');
 
 form_btn.addEventListener('click', () => {
 formCheckInputs();
@@ -158,7 +188,10 @@ const user_nameSuc =  user_name.nextElementSibling.classList,
 
 if(user_nameSuc == 'success' && user_phoneSuc == 'success') {
 // form_btn.type = 'submit'
-location.reload();
+// location.reload();
+popUp_form.children[0].classList.add('d-none')
+popUp_form.children[1].classList.remove('d-none')
+popUp_form.classList.remove('d-none')
 }
 })
 

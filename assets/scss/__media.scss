@@ -241,15 +241,6 @@
       &-list {
         margin-top: 50px;
       }
-      .product {
-        display: none;
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(3),
-        &:nth-child(4) {
-          display: block;
-        }
-      }
     }
 
     .product-card {
@@ -607,6 +598,10 @@
     }
     
     .block2 {
+      .swiper-block2 {
+        margin-top: 18px;
+        padding: 0 24px 0;
+      }
       &-item {
          padding: 8px;
         padding-top: 24px;

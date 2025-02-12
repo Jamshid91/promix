@@ -349,8 +349,8 @@ h1, h2, h3, h4, h5, h6 {
 .header .lang-link .lang-list {
   position: absolute;
   width: 100%;
-  left: 0;
-  top: 100%;
+  left: -3px;
+  top: 80%;
   display: none;
 }
 .header .lang-link .lang-list .active a {
@@ -456,9 +456,12 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 1px solid rgba(26, 32, 48, 0.1);
   color: #1A2030 !important;
 }
-.header .menu .lang-link .lang-list li:first-child {
+.header .menu .lang-link .lang-list {
+  top: 50%;
+}
+.header .menu .lang-link .lang-list li {
   margin: 0;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 .header .menu-nav {
   width: 100%;
@@ -526,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
   fill: #fff;
 }
 .header_home .lang-link svg path {
-  fill: #fff;
+  fill: #1A2030;
 }
 
 .btn {
@@ -805,6 +808,9 @@ main .block1-subtitle {
 main .block2 {
   padding: 75px 0;
   overflow: hidden;
+}
+main .block2 .swiper-block2 {
+  margin-top: 34px;
 }
 main .block2-box {
   display: grid;
@@ -1185,6 +1191,7 @@ main .catalog .show-more {
   font-weight: 500;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(64, 75, 103, 0.15);
+  cursor: pointer;
 }
 main .catalog .show-more:hover {
   color: #476FD3;
@@ -1881,18 +1888,15 @@ main .block14 .documents .document-item .item-list li a br {
   margin-top: 16px;
 }
 .popUp .thanks {
+  width: 322px;
   background: #fff;
-  padding: 43px 20px 70px;
-  text-align: center;
-}
-.popUp .thanks .title-text {
-  line-height: 32px;
-  margin: 20px 0 8px;
+  padding: 42px 30px;
 }
 .popUp .thanks .info-text {
-  font-size: 20px;
-  line-height: 32px;
-  color: #536272;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  margin-top: 30px;
 }
 
 .popUp-search .popUp-content {
@@ -2241,12 +2245,6 @@ main .block14 .documents .document-item .item-list li a br {
   main .catalog-list {
     margin-top: 50px;
   }
-  main .catalog .product {
-    display: none;
-  }
-  main .catalog .product:nth-child(1), main .catalog .product:nth-child(2), main .catalog .product:nth-child(3), main .catalog .product:nth-child(4) {
-    display: block;
-  }
   main .product-card .sidebar {
     min-width: 100%;
   }
@@ -2547,6 +2545,10 @@ main .block14 .documents .document-item .item-list li a br {
   main .block1 {
     background-image: url(../img/png/block-mob.png);
     background-position: center bottom;
+  }
+  main .block2 .swiper-block2 {
+    margin-top: 18px;
+    padding: 0 24px 0;
   }
   main .block2-item {
     padding: 8px;

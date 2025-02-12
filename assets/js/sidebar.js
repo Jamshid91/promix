@@ -9,4 +9,6 @@ sidebar_items.forEach(item => {
 const filter_btn = document.querySelector('.filter-btn')
 filter_btn.addEventListener('click', () => {
     filter_btn.parentElement.classList.toggle('showSidebar')
-})
+});
+
+

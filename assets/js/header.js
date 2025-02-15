@@ -172,6 +172,12 @@ const result = new Swiper('.swiper-result', {
           loop: true,
           centeredSlides: true,
         },
+        1920: {
+          slidesPerView: 6.2,
+          spaceBetween: 14,
+          loop: true,
+          centeredSlides: true,
+        },
   }
   });
 

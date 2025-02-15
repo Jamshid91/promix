@@ -2039,6 +2039,22 @@ main .block14 .documents .document-item .item-list li a br {
     transform: scale(1);
   }
 }
+
+@media (min-width: 1920px) {
+  main .block1 {
+    height: 70vh !important;
+  }
+  main .block1-title {
+    font-size: 70px;
+    line-height: 85px;
+    letter-spacing: 2px;
+  }
+  main .block1-subtitle {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
 @media (max-width: 1350px) {
   .header .logo {
     padding: 20px 20px 20px 0;
